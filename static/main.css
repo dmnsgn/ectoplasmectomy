@@ -1,0 +1,47 @@
+body {
+	overflow: hidden;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #191919;
+	-webkit-user-select: none;
+	   -moz-user-select: none;
+	    -ms-user-select: none;
+	        user-select: none;
+}
+
+canvas {
+	width 100%
+	height 100%
+}
+
+.Instructions {
+	position: absolute;
+	top: 50%;
+	right: 20px;
+	color: #444;
+	text-transform: uppercase;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	letter-spacing: 0.12em;
+	line-height: 1.4;
+	-webkit-transform: translate3d(0, -50%, 0);
+	        transform: translate3d(0, -50%, 0);
+}
+
+.Instructions:before {
+	content: "";
+	position: absolute;
+	left: -25px;
+	top: 6px;
+	width: 20px;
+	height: 1px;
+	background-color: #444;
+}
+
+@media (max-width: 600px) {
+	.Instructions {
+		display: none;
+	}
+}
